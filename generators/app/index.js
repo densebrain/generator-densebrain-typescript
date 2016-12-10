@@ -73,7 +73,10 @@ module.exports = yeoman.Base.extend({
   writing: function () {
     const
       {name, initGit, pushToGit, isPrivate} = this.props
-    
+  
+    /**
+     * Copy Templates
+     */
     this.fs.copyTpl(
       this.templatePath('**/*'),
       this.destinationPath(), {
@@ -81,7 +84,10 @@ module.exports = yeoman.Base.extend({
         indexContent: `export * from "${name}"`
       }
     )
-    // .gitignore
+  
+    /**
+     * Create gitignore +++
+     */
     this.fs.write(this.destinationPath(`.gitignore`), `
 node_modules
 dist
