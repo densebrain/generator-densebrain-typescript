@@ -38,12 +38,7 @@
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
   },
-  "eslintConfig": {
-    "extends": "xo-space",
-    "env": {
-      "mocha": true
-    }
-  },
+  
   "repository": "densebrain/generator-densebrain-typescript",
   "scripts": {
     "prepublish": "gulp prepublish",
