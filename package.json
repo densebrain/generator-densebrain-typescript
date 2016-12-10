@@ -39,6 +39,13 @@
     "yeoman-test": "^1.0.0"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
     "env": {
       "mocha": true
     }
