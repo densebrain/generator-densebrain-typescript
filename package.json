@@ -1,6 +1,6 @@
 {
   "name": "generator-densebrain-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "structured ts",
   "homepage": "",
   "author": {
@@ -38,7 +38,6 @@
     "yeoman-assert": "^2.0.0",
     "yeoman-test": "^1.0.0"
   },
-  
   "repository": "densebrain/generator-densebrain-typescript",
   "scripts": {
     "prepublish": "gulp prepublish",
