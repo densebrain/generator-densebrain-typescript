@@ -89,9 +89,18 @@ module.exports = yeoman.Base.extend({
      * Create gitignore +++
      */
     this.fs.write(this.destinationPath(`.gitignore`), `
+# NODE
 node_modules
+
+# BUILD
 dist
+
+# IDEA
 workspace.xml
+misc.xml
+
+# LOGS
+*.log
 `)
     
     
